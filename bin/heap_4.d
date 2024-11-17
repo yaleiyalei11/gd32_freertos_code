@@ -1,0 +1,14 @@
+..\bin\heap_4.o: ..\freertos\portable\MemMang\heap_4.c
+..\bin\heap_4.o: C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin\..\include\stdlib.h
+..\bin\heap_4.o: C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin\..\include\string.h
+..\bin\heap_4.o: ..\freertos\include\FreeRTOS.h
+..\bin\heap_4.o: C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin\..\include\stddef.h
+..\bin\heap_4.o: C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin\..\include\stdint.h
+..\bin\heap_4.o: ..\freertos\include\FreeRTOSConfig.h
+..\bin\heap_4.o: ..\freertos\include\projdefs.h
+..\bin\heap_4.o: ..\freertos\include\portable.h
+..\bin\heap_4.o: ..\freertos\include\deprecated_definitions.h
+..\bin\heap_4.o: ..\freertos\portable\RVDS\ARM_CM4F\portmacro.h
+..\bin\heap_4.o: ..\freertos\include\mpu_wrappers.h
+..\bin\heap_4.o: ..\freertos\include\task.h
+..\bin\heap_4.o: ..\freertos\include\list.h

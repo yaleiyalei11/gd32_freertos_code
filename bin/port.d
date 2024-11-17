@@ -1,0 +1,12 @@
+..\bin\port.o: ..\freertos\portable\RVDS\ARM_CM4F\port.c
+..\bin\port.o: ..\freertos\include\FreeRTOS.h
+..\bin\port.o: C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin\..\include\stddef.h
+..\bin\port.o: C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin\..\include\stdint.h
+..\bin\port.o: ..\freertos\include\FreeRTOSConfig.h
+..\bin\port.o: ..\freertos\include\projdefs.h
+..\bin\port.o: ..\freertos\include\portable.h
+..\bin\port.o: ..\freertos\include\deprecated_definitions.h
+..\bin\port.o: ..\freertos\portable\RVDS\ARM_CM4F\portmacro.h
+..\bin\port.o: ..\freertos\include\mpu_wrappers.h
+..\bin\port.o: ..\freertos\include\task.h
+..\bin\port.o: ..\freertos\include\list.h
