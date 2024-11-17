@@ -1,0 +1,14 @@
+..\bin\stream_buffer.o: ..\freertos\stream_buffer.c
+..\bin\stream_buffer.o: C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin\..\include\stdint.h
+..\bin\stream_buffer.o: C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin\..\include\string.h
+..\bin\stream_buffer.o: ..\freertos\include\FreeRTOS.h
+..\bin\stream_buffer.o: C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin\..\include\stddef.h
+..\bin\stream_buffer.o: ..\freertos\include\FreeRTOSConfig.h
+..\bin\stream_buffer.o: ..\freertos\include\projdefs.h
+..\bin\stream_buffer.o: ..\freertos\include\portable.h
+..\bin\stream_buffer.o: ..\freertos\include\deprecated_definitions.h
+..\bin\stream_buffer.o: ..\freertos\portable\RVDS\ARM_CM4F\portmacro.h
+..\bin\stream_buffer.o: ..\freertos\include\mpu_wrappers.h
+..\bin\stream_buffer.o: ..\freertos\include\task.h
+..\bin\stream_buffer.o: ..\freertos\include\list.h
+..\bin\stream_buffer.o: ..\freertos\include\stream_buffer.h

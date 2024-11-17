@@ -1,0 +1,16 @@
+..\bin\tasks.o: ..\freertos\tasks.c
+..\bin\tasks.o: C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin\..\include\stdlib.h
+..\bin\tasks.o: C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin\..\include\string.h
+..\bin\tasks.o: ..\freertos\include\FreeRTOS.h
+..\bin\tasks.o: C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin\..\include\stddef.h
+..\bin\tasks.o: C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin\..\include\stdint.h
+..\bin\tasks.o: ..\freertos\include\FreeRTOSConfig.h
+..\bin\tasks.o: ..\freertos\include\projdefs.h
+..\bin\tasks.o: ..\freertos\include\portable.h
+..\bin\tasks.o: ..\freertos\include\deprecated_definitions.h
+..\bin\tasks.o: ..\freertos\portable\RVDS\ARM_CM4F\portmacro.h
+..\bin\tasks.o: ..\freertos\include\mpu_wrappers.h
+..\bin\tasks.o: ..\freertos\include\task.h
+..\bin\tasks.o: ..\freertos\include\list.h
+..\bin\tasks.o: ..\freertos\include\timers.h
+..\bin\tasks.o: ..\freertos\include\stack_macros.h

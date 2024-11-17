@@ -1,0 +1,11 @@
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin'
+Build target 'demo_freertos'
+compiling main.c...
+main.c(113): warning:  #111-D: statement is unreachable
+  	return 0;
+main.c: 1 warning, 0 errors
+linking...
+Program Size: Code=8880 RO-data=536 RW-data=172 ZI-data=6388  
+FromELF: creating hex file...
+"..\bin\demo_freertos.axf" - 0 Error(s), 1 Warning(s).
+Build Time Elapsed:  00:00:02
