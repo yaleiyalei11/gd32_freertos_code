@@ -3,18 +3,18 @@
         {
             "name": "demo_freertos",
             "includePath": [
-                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\demo_freertos_softTimer\\inc",
-                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\demo_freertos_softTimer\\lib\\CMSIS\\GD\\GD32F30x\\Include",
-                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\demo_freertos_softTimer\\lib\\GD32F30x_standard_peripheral\\Include",
-                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\demo_freertos_softTimer\\lib\\CMSIS",
-                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\demo_freertos_softTimer\\usr",
-                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\demo_freertos_softTimer\\freertos\\include",
-                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\demo_freertos_softTimer\\freertos\\portable\\RVDS\\ARM_CM4F",
+                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\FreeRtos操作系统例程\\demo_freertos_interrupt\\inc",
+                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\FreeRtos操作系统例程\\demo_freertos_interrupt\\lib\\CMSIS\\GD\\GD32F30x\\Include",
+                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\FreeRtos操作系统例程\\demo_freertos_interrupt\\lib\\GD32F30x_standard_peripheral\\Include",
+                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\FreeRtos操作系统例程\\demo_freertos_interrupt\\lib\\CMSIS",
+                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\FreeRtos操作系统例程\\demo_freertos_interrupt\\usr",
+                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\FreeRtos操作系统例程\\demo_freertos_interrupt\\freertos\\include",
+                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\FreeRtos操作系统例程\\demo_freertos_interrupt\\freertos\\portable\\RVDS\\ARM_CM4F",
                 "C:\\Users\\ufdl2\\AppData\\Local\\Keil_v5\\ARM\\ARMCC\\include",
-                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\demo_freertos_softTimer\\src",
-                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\demo_freertos_softTimer\\lib\\GD32F30x_standard_peripheral\\Source",
-                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\demo_freertos_softTimer\\freertos",
-                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\demo_freertos_softTimer\\freertos\\portable\\MemMang"
+                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\FreeRtos操作系统例程\\demo_freertos_interrupt\\src",
+                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\FreeRtos操作系统例程\\demo_freertos_interrupt\\lib\\GD32F30x_standard_peripheral\\Source",
+                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\FreeRtos操作系统例程\\demo_freertos_interrupt\\freertos",
+                "d:\\study\\code\\MCU\\gd32f303_devkit\\4_例程源码\\FreeRtos操作系统例程\\demo_freertos_interrupt\\freertos\\portable\\MemMang"
             ],
             "defines": [
                 "USE_STDPERIPH_DRIVER",

@@ -51,13 +51,13 @@
 #define configUSE_TRACE_FACILITY	0
 #define configUSE_16_BIT_TICKS		0
 #define configIDLE_SHOULD_YIELD		1
+#define configUSE_MUTEXES			1 
+#define configUSE_COUNTING_SEMAPHORES	1
 
-#define configUSE_MUTEXES						1 
-
-#define configUSE_TIMERS				        1                               //Îª1Ê±ÆôÓÃÈí¼þ¶¨Ê±Æ÷
-#define configTIMER_TASK_PRIORITY		        (configMAX_PRIORITIES-1)        //Èí¼þ¶¨Ê±Æ÷ÓÅÏÈ¼¶
-#define configTIMER_QUEUE_LENGTH		        5                               //Èí¼þ¶¨Ê±Æ÷¶ÓÁÐ³¤¶È
-#define configTIMER_TASK_STACK_DEPTH	        (configMINIMAL_STACK_SIZE*2)    //Èí¼þ¶¨Ê±Æ÷ÈÎÎñ¶ÑÕ»´óÐ¡/
+#define configUSE_TIMERS				        1                               //Îª1Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+#define configTIMER_TASK_PRIORITY		        (configMAX_PRIORITIES-1)        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½È¼ï¿½
+#define configTIMER_QUEUE_LENGTH		        5                               //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½
+#define configTIMER_TASK_STACK_DEPTH	        (configMINIMAL_STACK_SIZE*2)    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ»ï¿½ï¿½Ð¡/
 
 
 /* Set the following definitions to 1 to include the API function, or zero

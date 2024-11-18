@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include "gd32f30x.h"
+#include "main.h"
 
 /* function declarations */
+extern SemaphoreHandle_t xSemaphore;
 
 /* 定时器中断 */
 void TIMER0_UP_IRQHandler(void);
@@ -50,13 +52,22 @@ void TIMER0_UP_IRQHandler(void)
 
 /**
  * @brief  TIMER1 中断服务函数
- * @author zbl (1473688511@qq.com)
+ * @author Peng GuangFeng (2304146968@qq.com)
  */
 void TIMER1_IRQHandler(void)
 {
     if (timer_interrupt_flag_get(TIMER1, TIMER_INT_FLAG_UP))
     {
+        /*用于上下文切换，初始值最好设置为pdFALSE*/
+        BaseType_t xHigherPriorityTaskWoken = pdFALSE;
 
+        /*多次释放信号量，将中断获得的数据推迟到任务集中处理，以免中断阻塞*/
+        xSemaphoreGiveFromISR(xSemaphore, &xHigherPriorityTaskWoken);
+        xSemaphoreGiveFromISR(xSemaphore, &xHigherPriorityTaskWoken);
+        xSemaphoreGiveFromISR(xSemaphore, &xHigherPriorityTaskWoken);
+
+        /*因为中断结束后必然是start_task执行，因此此处要申请上下文切换*/
+        portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
         /* 清除TIMER 中断标志位 */
         timer_interrupt_flag_clear(TIMER1, TIMER_INT_FLAG_UP);
     }

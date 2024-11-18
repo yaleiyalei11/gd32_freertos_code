@@ -38,6 +38,8 @@ OF SUCH DAMAGE.
 #ifndef GD32F30X_H
 #define GD32F30X_H
 
+//#define GD32F30X_HD 1
+
 #ifdef __cplusplus
  extern "C" {
 #endif

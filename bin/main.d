@@ -49,3 +49,4 @@
 ..\bin\main.o: ..\inc\led.h
 ..\bin\main.o: C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin\..\include\stdio.h
 ..\bin\main.o: ..\inc\usart.h
+..\bin\main.o: ..\inc\timer.h

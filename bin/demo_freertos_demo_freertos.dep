@@ -1,11 +1,11 @@
 Dependencies for Project 'demo_freertos', Target 'demo_freertos': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCOMPLIER506
-F (.\main.c)(0x67345508)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\main.o --omf_browse ..\bin\main.crf --depend ..\bin\main.d)
+F (.\main.c)(0x673B2B31)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\main.o --omf_browse ..\bin\main.crf --depend ..\bin\main.d)
 I (main.h)(0x65FC39AD)
 I (..\freertos\include\FreeRTOS.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stddef.h)(0x5E8E3CC2)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
-I (..\freertos\include\FreeRTOSConfig.h)(0x65FC39AD)
+I (..\freertos\include\FreeRTOSConfig.h)(0x673B2629)
 I (..\freertos\include\projdefs.h)(0x65FC39AD)
 I (..\freertos\include\portable.h)(0x65FC39AD)
 I (..\freertos\include\deprecated_definitions.h)(0x65FC39AD)
@@ -17,7 +17,7 @@ I (..\freertos\include\queue.h)(0x65FC39AD)
 I (..\freertos\include\semphr.h)(0x65FC39AD)
 I (..\freertos\include\event_groups.h)(0x65FC39AD)
 I (..\freertos\include\timers.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
 I (..\lib\CMSIS\core_cmFunc.h)(0x65FC39AD)
@@ -50,9 +50,10 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 I (..\inc\led.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdio.h)(0x5E8E3CC2)
 I (..\inc\usart.h)(0x65FC39AD)
-F (.\isr.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\isr.o --omf_browse ..\bin\isr.crf --depend ..\bin\isr.d)
+I (..\inc\timer.h)(0x65FC39AD)
+F (.\isr.c)(0x673B2A7B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\isr.o --omf_browse ..\bin\isr.crf --depend ..\bin\isr.d)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdio.h)(0x5E8E3CC2)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -83,10 +84,25 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_usart.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_wwdgt.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
-F (.\systick.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\systick.o --omf_browse ..\bin\systick.crf --depend ..\bin\systick.d)
+I (main.h)(0x65FC39AD)
+I (..\freertos\include\FreeRTOS.h)(0x65FC39AD)
+I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stddef.h)(0x5E8E3CC2)
+I (..\freertos\include\FreeRTOSConfig.h)(0x673B2629)
+I (..\freertos\include\projdefs.h)(0x65FC39AD)
+I (..\freertos\include\portable.h)(0x65FC39AD)
+I (..\freertos\include\deprecated_definitions.h)(0x65FC39AD)
+I (..\freertos\portable\RVDS\ARM_CM4F\portmacro.h)(0x65FC39AD)
+I (..\freertos\include\mpu_wrappers.h)(0x65FC39AD)
+I (..\freertos\include\task.h)(0x65FC39AD)
+I (..\freertos\include\list.h)(0x65FC39AD)
+I (..\freertos\include\queue.h)(0x65FC39AD)
+I (..\freertos\include\semphr.h)(0x65FC39AD)
+I (..\freertos\include\event_groups.h)(0x65FC39AD)
+I (..\freertos\include\timers.h)(0x65FC39AD)
+F (.\systick.c)(0x673B2720)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\systick.o --omf_browse ..\bin\systick.crf --depend ..\bin\systick.d)
 I (systick.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
 I (..\lib\CMSIS\core_cmFunc.h)(0x65FC39AD)
@@ -119,7 +135,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 I (main.h)(0x65FC39AD)
 I (..\freertos\include\FreeRTOS.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stddef.h)(0x5E8E3CC2)
-I (..\freertos\include\FreeRTOSConfig.h)(0x65FC39AD)
+I (..\freertos\include\FreeRTOSConfig.h)(0x673B2629)
 I (..\freertos\include\projdefs.h)(0x65FC39AD)
 I (..\freertos\include\portable.h)(0x65FC39AD)
 I (..\freertos\include\deprecated_definitions.h)(0x65FC39AD)
@@ -133,10 +149,11 @@ I (..\freertos\include\event_groups.h)(0x65FC39AD)
 I (..\freertos\include\timers.h)(0x65FC39AD)
 F (..\inc\led.h)(0x65FC39AD)()
 F (..\inc\usart.h)(0x65FC39AD)()
+F (..\inc\timer.h)(0x65FC39AD)()
 F (..\src\led.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\led.o --omf_browse ..\bin\led.crf --depend ..\bin\led.d)
 I (..\inc\led.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdio.h)(0x5E8E3CC2)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -171,7 +188,41 @@ I (..\usr\systick.h)(0x65FC39AD)
 F (..\src\usart.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\usart.o --omf_browse ..\bin\usart.crf --depend ..\bin\usart.d)
 I (..\inc\usart.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdio.h)(0x5E8E3CC2)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
+I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
+I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
+I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
+I (..\lib\CMSIS\core_cmFunc.h)(0x65FC39AD)
+I (..\lib\CMSIS\core_cm4_simd.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\system_gd32f30x.h)(0x65FC39AD)
+I (..\usr\gd32f30x_libopt.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_rcu.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_adc.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_can.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_crc.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_ctc.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_dac.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_dbg.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_dma.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exti.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_fmc.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_fwdgt.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_gpio.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_i2c.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_pmu.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_bkp.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_rtc.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_sdio.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_spi.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_timer.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_usart.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_wwdgt.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
+I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
+F (..\src\timer.c)(0x673AF9AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\timer.o --omf_browse ..\bin\timer.crf --depend ..\bin\timer.d)
+I (..\inc\timer.h)(0x65FC39AD)
+I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdio.h)(0x5E8E3CC2)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -204,7 +255,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_adc.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_adc.o --omf_browse ..\bin\gd32f30x_adc.crf --depend ..\bin\gd32f30x_adc.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_adc.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -236,7 +287,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_bkp.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_bkp.o --omf_browse ..\bin\gd32f30x_bkp.crf --depend ..\bin\gd32f30x_bkp.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_bkp.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -268,7 +319,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_can.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_can.o --omf_browse ..\bin\gd32f30x_can.crf --depend ..\bin\gd32f30x_can.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_can.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -301,7 +352,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdlib.h)(0x5E8E3CC2)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_crc.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_crc.o --omf_browse ..\bin\gd32f30x_crc.crf --depend ..\bin\gd32f30x_crc.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_crc.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -333,7 +384,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_ctc.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_ctc.o --omf_browse ..\bin\gd32f30x_ctc.crf --depend ..\bin\gd32f30x_ctc.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_ctc.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -365,7 +416,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_dac.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_dac.o --omf_browse ..\bin\gd32f30x_dac.crf --depend ..\bin\gd32f30x_dac.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_dac.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -397,7 +448,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_dbg.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_dbg.o --omf_browse ..\bin\gd32f30x_dbg.crf --depend ..\bin\gd32f30x_dbg.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_dbg.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -429,7 +480,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_dma.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_dma.o --omf_browse ..\bin\gd32f30x_dma.crf --depend ..\bin\gd32f30x_dma.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_dma.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -462,7 +513,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdlib.h)(0x5E8E3CC2)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_enet.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_enet.o --omf_browse ..\bin\gd32f30x_enet.crf --depend ..\bin\gd32f30x_enet.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_enet.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -496,7 +547,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdlib.h)(0x5E8E3CC2)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_exmc.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_exmc.o --omf_browse ..\bin\gd32f30x_exmc.crf --depend ..\bin\gd32f30x_exmc.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -528,7 +579,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_wwdgt.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_exti.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_exti.o --omf_browse ..\bin\gd32f30x_exti.crf --depend ..\bin\gd32f30x_exti.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exti.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -560,7 +611,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_fmc.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_fmc.o --omf_browse ..\bin\gd32f30x_fmc.crf --depend ..\bin\gd32f30x_fmc.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_fmc.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -592,7 +643,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_fwdgt.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_fwdgt.o --omf_browse ..\bin\gd32f30x_fwdgt.crf --depend ..\bin\gd32f30x_fwdgt.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_fwdgt.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -624,7 +675,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_gpio.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_gpio.o --omf_browse ..\bin\gd32f30x_gpio.crf --depend ..\bin\gd32f30x_gpio.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_gpio.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -656,7 +707,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_i2c.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_i2c.o --omf_browse ..\bin\gd32f30x_i2c.crf --depend ..\bin\gd32f30x_i2c.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_i2c.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -688,7 +739,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_misc.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_misc.o --omf_browse ..\bin\gd32f30x_misc.crf --depend ..\bin\gd32f30x_misc.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -720,7 +771,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_wwdgt.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_pmu.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_pmu.o --omf_browse ..\bin\gd32f30x_pmu.crf --depend ..\bin\gd32f30x_pmu.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_pmu.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -752,7 +803,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_rcu.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_rcu.o --omf_browse ..\bin\gd32f30x_rcu.crf --depend ..\bin\gd32f30x_rcu.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_rcu.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -784,7 +835,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_rtc.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_rtc.o --omf_browse ..\bin\gd32f30x_rtc.crf --depend ..\bin\gd32f30x_rtc.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_rtc.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -816,7 +867,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_sdio.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_sdio.o --omf_browse ..\bin\gd32f30x_sdio.crf --depend ..\bin\gd32f30x_sdio.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_sdio.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -848,7 +899,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_spi.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_spi.o --omf_browse ..\bin\gd32f30x_spi.crf --depend ..\bin\gd32f30x_spi.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_spi.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -880,7 +931,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_timer.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_timer.o --omf_browse ..\bin\gd32f30x_timer.crf --depend ..\bin\gd32f30x_timer.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_timer.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -912,7 +963,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_usart.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_usart.o --omf_browse ..\bin\gd32f30x_usart.crf --depend ..\bin\gd32f30x_usart.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_usart.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -944,7 +995,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (..\lib\GD32F30x_standard_peripheral\Source\gd32f30x_wwdgt.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\gd32f30x_wwdgt.o --omf_browse ..\bin\gd32f30x_wwdgt.crf --depend ..\bin\gd32f30x_wwdgt.d)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_wwdgt.h)(0x65FC39AD)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -976,7 +1027,7 @@ I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x65FC39AD)
 I (..\lib\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x65FC39AD)
 F (.\startup_gd32f30x_hd.s)(0x65FC39AD)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include--pd "__UVISION_VERSION SETA 541" --pd "GD32F30X_XD SETA 1"--list .\listings\startup_gd32f30x_hd.lst --xref -o ..\bin\startup_gd32f30x_hd.o --depend ..\bin\startup_gd32f30x_hd.d)
 F (.\system_gd32f30x.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\system_gd32f30x.o --omf_browse ..\bin\system_gd32f30x.crf --depend ..\bin\system_gd32f30x.d)
-I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x65FC39AD)
+I (..\lib\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x673AF69E)
 I (..\lib\CMSIS\core_cm4.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
 I (..\lib\CMSIS\core_cmInstr.h)(0x65FC39AD)
@@ -1011,7 +1062,7 @@ F (..\freertos\croutine.c)(0x65FC39AD)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROL
 I (..\freertos\include\FreeRTOS.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stddef.h)(0x5E8E3CC2)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
-I (..\freertos\include\FreeRTOSConfig.h)(0x65FC39AD)
+I (..\freertos\include\FreeRTOSConfig.h)(0x673B2629)
 I (..\freertos\include\projdefs.h)(0x65FC39AD)
 I (..\freertos\include\portable.h)(0x65FC39AD)
 I (..\freertos\include\deprecated_definitions.h)(0x65FC39AD)
@@ -1025,7 +1076,7 @@ I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdlib.h)(0x5
 I (..\freertos\include\FreeRTOS.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stddef.h)(0x5E8E3CC2)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
-I (..\freertos\include\FreeRTOSConfig.h)(0x65FC39AD)
+I (..\freertos\include\FreeRTOSConfig.h)(0x673B2629)
 I (..\freertos\include\projdefs.h)(0x65FC39AD)
 I (..\freertos\include\portable.h)(0x65FC39AD)
 I (..\freertos\include\deprecated_definitions.h)(0x65FC39AD)
@@ -1040,7 +1091,7 @@ I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdlib.h)(0x5
 I (..\freertos\include\FreeRTOS.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stddef.h)(0x5E8E3CC2)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
-I (..\freertos\include\FreeRTOSConfig.h)(0x65FC39AD)
+I (..\freertos\include\FreeRTOSConfig.h)(0x673B2629)
 I (..\freertos\include\projdefs.h)(0x65FC39AD)
 I (..\freertos\include\portable.h)(0x65FC39AD)
 I (..\freertos\include\deprecated_definitions.h)(0x65FC39AD)
@@ -1053,7 +1104,7 @@ I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\string.h)(0x5
 I (..\freertos\include\FreeRTOS.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stddef.h)(0x5E8E3CC2)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
-I (..\freertos\include\FreeRTOSConfig.h)(0x65FC39AD)
+I (..\freertos\include\FreeRTOSConfig.h)(0x673B2629)
 I (..\freertos\include\projdefs.h)(0x65FC39AD)
 I (..\freertos\include\portable.h)(0x65FC39AD)
 I (..\freertos\include\deprecated_definitions.h)(0x65FC39AD)
@@ -1067,7 +1118,7 @@ I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\string.h)(0x5E8E3CC2)
 I (..\freertos\include\FreeRTOS.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stddef.h)(0x5E8E3CC2)
-I (..\freertos\include\FreeRTOSConfig.h)(0x65FC39AD)
+I (..\freertos\include\FreeRTOSConfig.h)(0x673B2629)
 I (..\freertos\include\projdefs.h)(0x65FC39AD)
 I (..\freertos\include\portable.h)(0x65FC39AD)
 I (..\freertos\include\deprecated_definitions.h)(0x65FC39AD)
@@ -1082,7 +1133,7 @@ I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\string.h)(0x5
 I (..\freertos\include\FreeRTOS.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stddef.h)(0x5E8E3CC2)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
-I (..\freertos\include\FreeRTOSConfig.h)(0x65FC39AD)
+I (..\freertos\include\FreeRTOSConfig.h)(0x673B2629)
 I (..\freertos\include\projdefs.h)(0x65FC39AD)
 I (..\freertos\include\portable.h)(0x65FC39AD)
 I (..\freertos\include\deprecated_definitions.h)(0x65FC39AD)
@@ -1097,7 +1148,7 @@ I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdlib.h)(0x5
 I (..\freertos\include\FreeRTOS.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stddef.h)(0x5E8E3CC2)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
-I (..\freertos\include\FreeRTOSConfig.h)(0x65FC39AD)
+I (..\freertos\include\FreeRTOSConfig.h)(0x673B2629)
 I (..\freertos\include\projdefs.h)(0x65FC39AD)
 I (..\freertos\include\portable.h)(0x65FC39AD)
 I (..\freertos\include\deprecated_definitions.h)(0x65FC39AD)
@@ -1113,7 +1164,7 @@ I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\string.h)(0x5
 I (..\freertos\include\FreeRTOS.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stddef.h)(0x5E8E3CC2)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
-I (..\freertos\include\FreeRTOSConfig.h)(0x65FC39AD)
+I (..\freertos\include\FreeRTOSConfig.h)(0x673B2629)
 I (..\freertos\include\projdefs.h)(0x65FC39AD)
 I (..\freertos\include\portable.h)(0x65FC39AD)
 I (..\freertos\include\deprecated_definitions.h)(0x65FC39AD)
@@ -1125,7 +1176,7 @@ F (..\freertos\portable\RVDS\ARM_CM4F\port.c)(0x65FC39AD)(--c99 -c --cpu Cortex-
 I (..\freertos\include\FreeRTOS.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stddef.h)(0x5E8E3CC2)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
-I (..\freertos\include\FreeRTOSConfig.h)(0x65FC39AD)
+I (..\freertos\include\FreeRTOSConfig.h)(0x673B2629)
 I (..\freertos\include\projdefs.h)(0x65FC39AD)
 I (..\freertos\include\portable.h)(0x65FC39AD)
 I (..\freertos\include\deprecated_definitions.h)(0x65FC39AD)

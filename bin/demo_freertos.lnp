@@ -4,6 +4,7 @@
 "..\bin\systick.o"
 "..\bin\led.o"
 "..\bin\usart.o"
+"..\bin\timer.o"
 "..\bin\gd32f30x_adc.o"
 "..\bin\gd32f30x_bkp.o"
 "..\bin\gd32f30x_can.o"

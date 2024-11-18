@@ -3,11 +3,11 @@
 
 #define USE_HAL_LEGACY
 
-#define Timebase_Source_is_SysTick 1 // µ±Timebase SourceÎªSysTickÊ±¸ÄÎª1
-// #define Timebase_Source_is_SysTick 0 // µ±Ê¹ÓÃFreeRTOS£¬Timebase SourceÎªÆäËû¶¨Ê±Æ÷Ê±¸ÄÎª0
+#define Timebase_Source_is_SysTick 1 // å½“Timebase Sourceä¸ºSysTickæ—¶æ”¹ä¸º1
+// #define Timebase_Source_is_SysTick 0 // å½“ä½¿ç”¨FreeRTOSï¼ŒTimebase Sourceä¸ºå…¶ä»–å®šæ—¶å™¨æ—¶æ”¹ä¸º0
 
 #if (!Timebase_Source_is_SysTick)
-extern TIM_HandleTypeDef htim7; // µ±Ê¹ÓÃFreeRTOS£¬Timebase SourceÎªÆäËû¶¨Ê±Æ÷Ê±£¬ĞŞ¸ÄÎª¶ÔÓ¦µÄ¶¨Ê±Æ÷
+extern TIM_HandleTypeDef htim7; // å½“ä½¿ç”¨FreeRTOSï¼ŒTimebase Sourceä¸ºå…¶ä»–å®šæ—¶å™¨æ—¶ï¼Œä¿®æ”¹ä¸ºå¯¹åº”çš„å®šæ—¶å™¨
 #define Timebase_htim htim7
 
 #define Delay_GetCounter() __HAL_TIM_GetCounter(&Timebase_htim)
@@ -19,7 +19,7 @@ extern TIM_HandleTypeDef htim7; // µ±Ê¹ÓÃFreeRTOS£¬Timebase SourceÎªÆäËû¶¨Ê±Æ÷Ê±
 
 static uint16_t fac_us = 0;
 static uint32_t fac_ms = 0;
-static uint32_t g_systick = 0; // g_systickÊ±ÖÓ±äÁ¿£¬Ã¿´¥·¢Ò»´Îsystick£¬¸Ã±äÁ¿Ôö¼Ó1
+static uint32_t g_systick = 0; // g_systickæ—¶é’Ÿå˜é‡ï¼Œæ¯è§¦å‘ä¸€æ¬¡systickï¼Œè¯¥å˜é‡å¢åŠ 1
 
 extern void xPortSysTickHandler( void );
 //extern BaseType_t xTaskGetSchedulerState( void );
@@ -39,22 +39,22 @@ void systick_config(void)
 }
 
 /**
- * @brief  SysTick ÖĞ¶Ïº¯Êı
+ * @brief  SysTick ä¸­æ–­å‡½æ•°
  * @author zbl (1473688511@qq.com)
  * @author dengax
  */
 void SysTick_Handler(void)
 {
     g_systick++;
-//    if(xTaskGetSchedulerState()!=taskSCHEDULER_NOT_STARTED)//ÏµÍ³ÒÑ¾­ÔËĞĞ
+//    if(xTaskGetSchedulerState()!=taskSCHEDULER_NOT_STARTED)//ç³»ç»Ÿå·²ç»è¿è¡Œ
 //    {
         xPortSysTickHandler();
 //    }
 }
 
 /**
- * @brief  »ñÈ¡ÏµÍ³µ±Ç°µÄsystick
- * @return uint32_t: µ±Ç°µÄsystick
+ * @brief  è·å–ç³»ç»Ÿå½“å‰çš„systick
+ * @return uint32_t: å½“å‰çš„systick
  * @author zbl (1473688511@qq.com)
  */
 uint32_t systick_get(void)
@@ -63,8 +63,8 @@ uint32_t systick_get(void)
 }
 
 /**
- * @brief  »ñÈ¡ÉÏ´ÎÏµÍ³µÄsystickµ½µ±Ç°ÏµÍ³µÄsystick ¾àÀë¶à¾Ã
- * @param  last_tick:   ÉÏ´ÎÏµÍ³µÄsystick
+ * @brief  è·å–ä¸Šæ¬¡ç³»ç»Ÿçš„systickåˆ°å½“å‰ç³»ç»Ÿçš„systick è·ç¦»å¤šä¹…
+ * @param  last_tick:   ä¸Šæ¬¡ç³»ç»Ÿçš„systick
  * @return uint32_t:
  * @author zbl (1473688511@qq.com)
  */
@@ -74,13 +74,13 @@ uint32_t systick_distance_get(uint32_t last_tick)
 }
 
 /**
- * @brief  ÑÓÊ±³õÊ¼»¯º¯Êı
+ * @brief  å»¶æ—¶åˆå§‹åŒ–å‡½æ•°
  * @author zbl (1473688511@qq.com)
  */
 void delay_init(void)
 {
 #if (!Timebase_Source_is_SysTick)
-    fac_ms = 1000000; // ×÷ÎªÊ±»ùµÄ¼ÆÊıÆ÷Ê±ÖÓÆµÂÊÔÚHAL_InitTick()ÖĞ±»ÉèÎªÁË1MHz
+    fac_ms = 1000000; // ä½œä¸ºæ—¶åŸºçš„è®¡æ•°å™¨æ—¶é’Ÿé¢‘ç‡åœ¨HAL_InitTick()ä¸­è¢«è®¾ä¸ºäº†1MHz
     fac_us = fac_ms / 1000;
 #else
     fac_ms = SystemCoreClock / 1000;
@@ -89,7 +89,7 @@ void delay_init(void)
 }
 
 /**
- * @brief  Î¢Ãë¼¶ÑÓÊ±
+ * @brief  å¾®ç§’çº§å»¶æ—¶
  * @param  nus:
  * @author zbl (1473688511@qq.com)
  */
@@ -131,7 +131,7 @@ void delay_us(uint32_t nus)
 }
 
 /**
- * @brief  ºÁÃë¼¶ÑÓÊ±
+ * @brief  æ¯«ç§’çº§å»¶æ—¶
  * @param  nms:
  * @author zbl (1473688511@qq.com)
  */
@@ -172,13 +172,13 @@ void delay_ms(uint32_t nms)
     }
 }
 
-// /*ÖØĞ´HAL_Delay*/
+// /*é‡å†™HAL_Delay*/
 // void HAL_Delay(uint32_t Delay)
 // {
 //     uint32_t tickstart = HAL_GetTick();
 //     uint32_t wait = Delay;
 
-//     /*²»Ì«Ã÷°×¹Ù·½Ô´ÂëÎªÉ¶ÕâÃ´Ğ´£¬»á¶àÑÓÊ±1ms£¬×¢ÊÍµôºó¸ü×¼*/
+//     /*ä¸å¤ªæ˜ç™½å®˜æ–¹æºç ä¸ºå•¥è¿™ä¹ˆå†™ï¼Œä¼šå¤šå»¶æ—¶1msï¼Œæ³¨é‡Šæ‰åæ›´å‡†*/
 //     //  /* Add a freq to guarantee minimum wait */
 //     //  if (wait < HAL_MAX_DELAY)
 //     //  {
