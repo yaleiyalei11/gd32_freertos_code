@@ -1,0 +1,13 @@
+..\bin\croutine.o: ..\freertos\croutine.c
+..\bin\croutine.o: ..\freertos\include\FreeRTOS.h
+..\bin\croutine.o: C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin\..\include\stddef.h
+..\bin\croutine.o: C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin\..\include\stdint.h
+..\bin\croutine.o: ..\freertos\include\FreeRTOSConfig.h
+..\bin\croutine.o: ..\freertos\include\projdefs.h
+..\bin\croutine.o: ..\freertos\include\portable.h
+..\bin\croutine.o: ..\freertos\include\deprecated_definitions.h
+..\bin\croutine.o: ..\freertos\portable\RVDS\ARM_CM4F\portmacro.h
+..\bin\croutine.o: ..\freertos\include\mpu_wrappers.h
+..\bin\croutine.o: ..\freertos\include\task.h
+..\bin\croutine.o: ..\freertos\include\list.h
+..\bin\croutine.o: ..\freertos\include\croutine.h

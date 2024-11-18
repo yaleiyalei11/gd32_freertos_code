@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "led.h": "c",
+        "buzzer.h": "c",
+        "gd32f30x.h": "c",
+        "main.h": "c"
+    }
+}
