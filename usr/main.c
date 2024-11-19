@@ -233,7 +233,7 @@ void rev_task(void *pvParameters)
     for(;;)
     {   
         //串口输出有重叠为正常现象，因为多个任务同时操作硬件导致的资源占用，不影响真正的数据接收，将队列传输判断后的串口输出注释掉即为正常
-        //或者将判断成功改为判断失败，请读者自行尝试
+        //或者使用临界区的相关知识，该内容之后会讲解。
         if(xQueue1 != NULL){
             err = xQueueReceive(xQueue1, &xReceivedData1,(200 / portTICK_RATE_MS)); //阻塞接收
             if(err == pdPASS)
