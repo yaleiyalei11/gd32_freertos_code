@@ -1,6 +1,6 @@
 Dependencies for Project 'demo_freertos', Target 'demo_freertos': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCOMPLIER506
-F (.\main.c)(0x6731EDBE)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\main.o --omf_browse ..\bin\main.crf --depend ..\bin\main.d)
+F (.\main.c)(0x674189DF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\inc -I ..\lib\CMSIS\GD\GD32F30x\Include -I ..\lib\GD32F30x_standard_peripheral\Include -I ..\lib\CMSIS -I ..\usr -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM4F-IC:\Users\ufdl2\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include-D__UVISION_VERSION="541" -DGD32F30X_XD -DUSE_STDPERIPH_DRIVER -DGD32F30X_XD-o ..\bin\main.o --omf_browse ..\bin\main.crf --depend ..\bin\main.d)
 I (main.h)(0x65FC39AD)
 I (..\freertos\include\FreeRTOS.h)(0x65FC39AD)
 I (C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stddef.h)(0x5E8E3CC2)

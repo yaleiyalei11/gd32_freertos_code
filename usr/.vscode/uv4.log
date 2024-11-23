@@ -1,11 +1,6 @@
-*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin'
-Build target 'demo_freertos'
-compiling main.c...
-main.c(69): warning:  #111-D: statement is unreachable
-  	return 0;
-main.c: 1 warning, 0 errors
-linking...
-Program Size: Code=7760 RO-data=500 RW-data=156 ZI-data=6388  
-FromELF: creating hex file...
-"..\bin\demo_freertos.axf" - 0 Error(s), 1 Warning(s).
-Build Time Elapsed:  00:00:02
+Project:	'demo_freertos'
+Target:	'demo_freertos'
+
+Executable is outdated, continue ?Load "..\\bin\\demo_freertos.axf" 
+Erase Done.Programming Done.Verify OK.Application running ...
+Flash Load finished at 15:54:00

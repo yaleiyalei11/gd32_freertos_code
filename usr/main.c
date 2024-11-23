@@ -1,15 +1,12 @@
 /**
- * @Descripttion : freerots创建任务例程，实现使用freertos任务创建与删除
- * @version      : 
- * @Author       : Deng Jiaxiong
- * @Date         : 2024-02-16 11:33:46
- * @LastEditors  : Deng Jiaxiong and Peng GuangFeng
- * @LastEditTime : 2024-11-10
+ * @Descripttion : freerots资源管理例程，守门人任务实现资源管理,本任务通过资源调度管理解决创建任务例程和队列历程的串口乱码的问题
+ * @version      : 2024嵌入式组
+ * @Author       : Peng Guangfeng(2304146968@qq.com)
+ * @Date         : 2024-11-23
+ * @LastEditors  : Peng Guangfeng(2304146968@qq.com)
+ * @LastEditTime : 2024-11-23
  * @homework     : 学习之后建议尝试以下功能：
- *								 1.调用API函数更改任务优先级
- *								 2.尝试不同的任务调度模式运行以及更改时间片
- *								 3.尝试使用空闲任务与空闲钩子任务
- *								 4.尝试线程本地储存
+ *								 1.
 **/
 #include "main.h"
 #include "gd32f30x.h"
@@ -40,6 +37,7 @@ TaskHandle_t LEDTask_Handler2;
 //led任务任务函数
 void led_task(void *pvParameters);
 void led2_task(void *pvParameters);
+void prvGatekeeperTask(void *pvParameters);
 
 /* 动态创建事件组 */
 EventGroupHandle_t xEventGroup;
@@ -48,12 +46,21 @@ EventGroupHandle_t xEventGroup;
 static const char *pcTextForTask1 = "Task 1 is running\r\n";
 static const char *pcTextForTask2 = "Task 2 is running\r\n";
 
+QueueHandle_t xQueueprint;
+
+
 int main(void)
 {
-    int err = 1;
+    leds_all_init();            //led初始化
+    usart_init(USART_0, 115200, 1, 1);//串口初始化
+
+    printf("FreeRTOS Start\r\n");
+
+    int err = 1;    
     
-    /* 动态创建事件组 */
-	xEventGroup = xEventGroupCreate();
+    xQueueprint = xQueueCreate(5, sizeof(char *));
+    if(xQueueprint == NULL)
+        printf("Queue Create Failed\r\n");
 
     err  = xTaskCreate( (TaskFunction_t )start_task,
                         (const char*    )"start_task",
@@ -62,9 +69,8 @@ int main(void)
                         (UBaseType_t    )START_TASK_PRIO,
                         (TaskHandle_t*  )&StartTask_Handler);
     if(err == pdFALSE)//养成良好的编程习惯，判断任务创建是否成功以更快的判断bug所在
-    {
         printf("Task Create Failed\r\n");
-    }
+
     vTaskStartScheduler();	//开始调度
 
 	while (1)
@@ -80,14 +86,11 @@ int main(void)
  * @return        {*}
  * @author       : Deng Jiaxiong and Peng GuangFeng( 2972534518@qq.com )
 **/
-void start_task(void *pvParameters)
+static void start_task(void *pvParameters)
 {
     int err = 1;
     taskENTER_CRITICAL();       //进入临界区
-    
-    leds_all_init();            //led初始化
-    usart_init(USART_0, 115200, 1, 1);//串口初始化
-    
+
     err = xTaskCreate(  (TaskFunction_t )led_task,      //创建led点亮任务
                         (const char*    )"led_task",
                         (uint16_t       )LED_STK_SIZE,
@@ -95,9 +98,7 @@ void start_task(void *pvParameters)
                         (UBaseType_t    )LED_TASK_PRIO,
                         (TaskHandle_t*  )&LEDTask_Handler);
     if(err == pdFALSE)
-    {
         printf("Task Create Failed\r\n");
-    }
 
     err = xTaskCreate(  (TaskFunction_t )led2_task,      //创建led熄灭任务
                         (const char*    )"led2_task",
@@ -106,9 +107,17 @@ void start_task(void *pvParameters)
                         (UBaseType_t    )LED2_TASK_PRIO,
                         (TaskHandle_t*  )&LEDTask_Handler2);
     if(err == pdFALSE)
-    {
         printf("Task Create Failed\r\n");
-    }
+
+    err = xTaskCreate(  (TaskFunction_t )prvGatekeeperTask, 
+                        (const char*    )"Gatekeeper", 
+                        (uint16_t       )128, 
+                                         NULL, 
+                                         3, 
+                                         NULL);
+    if(err == pdFALSE)
+        printf("Task Create Failed\r\n");
+
     taskEXIT_CRITICAL();    //退出临界区
     //注意：该任务删除后其内存会被空闲任务清除，空闲任务在其他任务阻塞时运行
     vTaskDelete(NULL);      //删除本任务，以防任务抢占CPU
@@ -120,18 +129,15 @@ void start_task(void *pvParameters)
  * @return        {*}
  * @author       : Deng Jiaxiong and Peng GuangFeng( 2972534518@qq.com )
 **/
-void led_task(void *pvParameters)
+static void led_task(void *pvParameters)
 {
-    char* str = (char *)pvParameters;
+    char *pcStringToSend1 = (char* )pvPortMalloc(sizeof("efg"));
+    sprintf(pcStringToSend1, "efg");
     for(;;)
     {
-        if(xEventGroup != NULL){                            //如果事件组创建成功
-            led_on(LED);                                    //点亮核心板led
-            printf("%s\r\n", str);                    //debug发送      
-            vTaskDelay(200 / portTICK_RATE_MS);             //延时200ms
-        }
-        else
-            vTaskDelay(10 / portTICK_RATE_MS);              //延时10ms，避免事件组不存在导致任务占据cpu资源
+        led_on(LED);                                    //点亮核心板led
+        xQueueSendToBack(xQueueprint, &pcStringToSend1, 0);          //向守门人任务发送串口输出的请求
+        vTaskDelay(200 / portTICK_RATE_MS);             //延时200ms
     }
 }
 
@@ -141,17 +147,30 @@ void led_task(void *pvParameters)
  * @return        {*}
  * @author       : Peng GuangFeng
 **/
-void led2_task(void *pvParameters)
+static void led2_task(void *pvParameters)
 {
-    char* str = (char *)pvParameters;
+    char *pcStringToSend = (char* )pvPortMalloc(sizeof("abc"));
+    sprintf(pcStringToSend, "abc");
+    for(;;)
+    {  
+        led_off(LED);                                   //熄灭核心板led
+        xQueueSendToBack(xQueueprint, &pcStringToSend, 0);          //向守门人任务发送串口输出的请求
+        vTaskDelay(200 / portTICK_RATE_MS);             //延时800ms
+    }
+}
+
+/**
+ * @brief        : 守门人任务，用于输出串口数据。
+ * @param        : {void} *pvParameters:
+ * @return       : {*}
+ * @author       : Peng GuangFeng
+**/
+static void prvGatekeeperTask(void *pvParameters)
+{
+    char * pcMessage;
     for(;;)
     {
-        if(xEventGroup != NULL){
-            led_off(LED);                                   //熄灭核心板led
-            printf("%s\r\n", str);                           //debug发送
-            vTaskDelay(200 / portTICK_RATE_MS);             //延时800ms
-        }
-        else
-            vTaskDelay(10 / portTICK_RATE_MS);              //延时10ms，避免事件组不存在导致任务占据cpu资源
+        xQueueReceive(xQueueprint, &pcMessage, portMAX_DELAY);
+        printf("%s\r\n", pcMessage);//可以看见串口发送不再乱码，因为串口资源只有守门人任务可以访问
     }
 }
