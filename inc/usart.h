@@ -31,7 +31,7 @@ typedef enum
 {
     USART_0 = 0,
     USART_1,
-		USART_2,
+	USART_2,
 	
 } usart_e;
 

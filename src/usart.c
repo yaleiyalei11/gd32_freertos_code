@@ -20,8 +20,7 @@ uint8_t usart_buf_index = 0;
  */
 int fputc(int ch, FILE *f)
 {
-    while (RESET == usart_flag_get(DEBUG_USART, USART_FLAG_TBE))
-        ;
+    while (RESET == usart_flag_get(DEBUG_USART, USART_FLAG_TBE));
     usart_data_transmit(DEBUG_USART, (uint8_t)ch);
     return ch;
 }

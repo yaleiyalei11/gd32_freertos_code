@@ -21,13 +21,21 @@ Target DLL:      CMSIS_AGDI.dll V1.33.21.0
 Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
-d:\study\code\MCU\gd32f303_devkit\4_例程源码\FreeRtos操作系统例程\demo_freertos_interrupt\usr\demo_freertos.uvprojx
+d:\study\code\MCU\gd32f303_devkit\4_例程源码\FreeRtos操作系统例程\demo_freertos_notification\usr\demo_freertos.uvprojx
 Project File Date:  11/18/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Users\ufdl2\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\Bin'
 Build target 'demo_freertos'
-"..\bin\demo_freertos.axf" - 0 Error(s), 0 Warning(s).
+compiling isr.c...
+compiling main.c...
+main.c(55): warning:  #111-D: statement is unreachable
+  	return 0;
+main.c: 1 warning, 0 errors
+linking...
+Program Size: Code=8100 RO-data=436 RW-data=140 ZI-data=6388  
+FromELF: creating hex file...
+"..\bin\demo_freertos.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -40,7 +48,7 @@ Package Vendor: GigaDevice
   C:/Users/ufdl2/AppData/Local/Arm/Packs/GigaDevice/GD32F30x_DFP/2.2.1/Device/Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

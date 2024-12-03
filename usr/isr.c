@@ -3,7 +3,7 @@
 #include "main.h"
 
 /* function declarations */
-extern SemaphoreHandle_t xSemaphore;
+extern TaskHandle_t UartTask_Handler;
 
 /* 定时器中断 */
 void TIMER0_UP_IRQHandler(void);
@@ -61,10 +61,10 @@ void TIMER1_IRQHandler(void)
         /*用于上下文切换，初始值最好设置为pdFALSE*/
         BaseType_t xHigherPriorityTaskWoken = pdFALSE;
 
-        /*多次释放信号量，将中断获得的数据推迟到任务集中处理，以免中断阻塞*/
-        xSemaphoreGiveFromISR(xSemaphore, &xHigherPriorityTaskWoken);
-        xSemaphoreGiveFromISR(xSemaphore, &xHigherPriorityTaskWoken);
-        xSemaphoreGiveFromISR(xSemaphore, &xHigherPriorityTaskWoken);
+        //多次发送任务通知
+        vTaskNotifyGiveFromISR(UartTask_Handler , &xHigherPriorityTaskWoken);
+        vTaskNotifyGiveFromISR(UartTask_Handler , &xHigherPriorityTaskWoken);
+        vTaskNotifyGiveFromISR(UartTask_Handler , &xHigherPriorityTaskWoken);
 
         /*因为中断结束后必然是start_task执行，因此此处要申请上下文切换*/
         portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
